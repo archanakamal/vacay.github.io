@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      section {
+        background: linear-gradient(135deg, #003d4d, #007f99);
+        color: white;
+        padding: 60px 20px;
+      }
+
+      .form-container {
+        max-width: 600px;
+        margin: auto;
+        background: linear-gradient(145deg, #005f73, #0a9396);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1em;
+      }
+
+      button {
+        padding: 14px;
+        background: linear-gradient(to right, #00b4d8, #0077b6);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: linear-gradient(to right, #0077b6, #023e8a);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="form-container">
+        <h2>Book Your Beach Getaway</h2>
+        <form>
+          <label>
+            Full Name:
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email Address:
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Phone Number:
+            <input type="tel" name="phone" pattern="[0-9]{10}" required />
+          </label>
+
+          <label>
+            Destination:
+            <select name="destination" required>
+              <option value="">Select a beach</option>
+              <option value="Bali">Bali</option>
+              <option value="Maldives">Bora Bora</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Goa">Whitehaven</option>
+              <option value="Phuket">Hvar</option>
+            </select>
+          </label>
+
+          <label>
+            Package Type:
+            <select name="package" required>
+              <option value="">Choose a package</option>
+              <option value="Standard">Standard</option>
+              <option value="Deluxe">Deluxe</option>
+              <option value="Premium">Premium</option>
+            </select>
+          </label>
+
+          <label>
+            Date of Visit:
+            <input type="date" name="date" required />
+          </label>
+
+          <label>
+            Number of People:
+            <input type="number" name="people" min="1" max="50" required />
+          </label>
+
+          <label>
+            Special Requests:
+            <textarea name="requests" rows="4" placeholder="Any special needs or instructions..."></textarea>
+          </label>
+
+          <button type="submit">Reserve Now</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

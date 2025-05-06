@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    /* Background Video */
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      background: linear-gradient(to bottom right, rgba(0, 77, 77, 0.8), rgba(0, 153, 153, 0.8));
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 50px 0 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px 20px 80px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 15px;
+      width: 260px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .info {
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    .info strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Beach Background Video -->
+  <video autoplay muted loop class="video-bg">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
+
+  <!-- About Us Content -->
+  <h1>About Us</h1>
+  <div class="container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="assets/shreayy.jpg" alt="Shreayaa">
+      <div class="info">
+        <strong>College:</strong> PSG College of Technology
+        <strong>Name:</strong> Shreayaa JS
+        <strong>Phone:</strong> +91 123456778  
+        <strong>Achievements:</strong> 2000+ Bookings in 2024  
+        <strong>Revenue:</strong> ₹12,00,000
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="assets/ss1.jpg" alt="Beach 2">
+      <div class="info">
+        <strong>College:</strong> PSG College of Technology
+        <strong>Name:</strong> Sakthisree J 
+        <strong>Phone:</strong> +91 9123456789  
+        <strong>Achievements:</strong> Awarded Best Travel Innovator  
+        <strong>Revenue:</strong> ₹9,50,000
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="assets/archana.jpg" alt="Beach 3">
+      <div class="info">
+        <strong>College:</strong> PSG College of Technology
+        <strong>Name:</strong> Archana K
+        <strong>Phone:</strong> +91 9988776655  
+        <strong>Achievements:</strong> 4.9★ Customer Satisfaction  
+        <strong>Revenue:</strong> ₹10,75,000
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="assets/sangavi.jpeg" alt="Beach 4">
+      <div class="info">
+        <strong>College:</strong> PSG College of Technology
+        <strong>Name:</strong> Sangavi K
+        <strong>Phone:</strong> +91 9090909090  
+        <strong>Achievements:</strong> Expanded to 3 Countries  
+        <strong>Revenue:</strong> ₹15,30,000
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
